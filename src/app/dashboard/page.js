@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import styles from '../styles/Dashboard.module.css';
+import Image from 'next/image';
 
 export default function Dashboard() {
   const router = useRouter();
@@ -46,8 +47,9 @@ export default function Dashboard() {
         <div className={styles.headerContent}>
           <h1>My Projects Dashboard</h1>
           <div className={styles.userInfo}>
-            <span>Welcome, {user.name}</span>
+            <Image src="/public/avatar.png" alt="O" className={styles.avatar} width={50} height={50} />
             <button onClick={handleLogout} className={styles.logoutBtn}>Logout</button>
+            <span>{user.name}</span>
           </div>
         </div>
         <nav className={styles.nav}>

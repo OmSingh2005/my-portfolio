@@ -31,22 +31,30 @@ export default function Login() {
     
     // For demo purposes, we'll use a simple authentication
     // In a real app, you'd verify against a backend
-    if (formData.email === 'user@example.com' && formData.password === 'password') {
+    if (formData.email === 'omsingh@snom.com' && formData.password === 'PASS@user123') {
       // Store auth token in localStorage (in a real app, this would be a JWT from your backend)
       localStorage.setItem('authToken', 'demo-token-12345');
-      localStorage.setItem('user', JSON.stringify({ email: formData.email, name: 'Demo User' }));
+      localStorage.setItem('user', JSON.stringify({ email: formData.email, name: 'Om' }));
+      
+      // Redirect to dashboard
+      router.push('/dashboard');
+    }
+    else if (formData.email === 'user@example.com' && formData.password === 'password1') {
+      // Store auth token in localStorage (in a real app, this would be a JWT from your backend)
+      localStorage.setItem('authToken', 'demo-token-12345');
+      localStorage.setItem('user', JSON.stringify({ email: formData.email, name: 'User' }));
       
       // Redirect to dashboard
       router.push('/dashboard');
     } else {
-      setError('Invalid credentials. Try user@example.com / password');
+      setError('Invalid credentials. Try : user@example.com / password');
     }
   };
 
   return (
     <div className={styles.container}>
       <div className={styles.formContainer}>
-        <h1>Login</h1>
+        <h1>Enter Your Creden..n..shals (nvm)</h1>
         
         {error && <div className={styles.error}>{error}</div>}
         

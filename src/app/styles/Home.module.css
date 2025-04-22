@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #f8f9fa;
+  background-color: #031a32;
   border-bottom: 1px solid #e9ecef;
 }
 
@@ -21,18 +21,19 @@
 
 .nav a {
   text-decoration: none;
-  color: #343a40;
+  color: rgb(255, 255, 255);
   font-weight: 500;
 }
 
 .nav a:hover {
-  color: #007bff;
+  color: #b83a79;
+  text-decoration: underline;
 }
 
 .logoutBtn {
   background: none;
   border: none;
-  color: #dc3545;
+  color: white;
   cursor: pointer;
   font-weight: 500;
   padding: 0.25rem 0.5rem;
@@ -40,6 +41,7 @@
 
 .logoutBtn:hover {
   text-decoration: underline;
+  color: #b83a79;
 }
 
 .main {
@@ -51,7 +53,7 @@
   text-align: center;
   padding: 3rem 1rem;
   margin-bottom: 2rem;
-  background-color: #f1f8ff;
+  background-color: #041b32;
   border-radius: 8px;
 }
 
@@ -62,7 +64,7 @@
 
 .hero p {
   font-size: 1.2rem;
-  color: #495057;
+  color: #45a290;
   max-width: 600px;
   margin: 0 auto 1.5rem;
 }
@@ -78,7 +80,7 @@
 }
 
 .ctaButton:hover {
-  background-color: #0069d9;
+  background-color: #5f7791;
 }
 
 .publicProjects {
@@ -93,8 +95,8 @@
 }
 
 .projectCard {
-  background-color: white;
-  border: 1px solid #dee2e6;
+  background-color: rgb(4, 39, 73);
+  border: 1px solid #042445;
   border-radius: 6px;
   padding: 1.5rem;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -113,7 +115,7 @@
 .footer {
   text-align: center;
   padding: 1.5rem;
-  background-color: #f8f9fa;
+  background-color: #002a05;
   border-top: 1px solid #e9ecef;
-  color: #6c757d;
+  color: #ffffff;
 }
