@@ -1,5 +1,7 @@
+"use client";
+
 import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import styles from '../styles/Auth.module.css';
 
@@ -77,7 +79,7 @@ export default function Login() {
         </form>
         
         <div className={styles.formFooter}>
-          <p>Don't have an account? <Link href="/register">Register</Link></p>
+          <p>Do not have an account? <Link href="/register">Register</Link></p>
           <Link href="/">Back to Home</Link>
         </div>
       </div>

@@ -1,157 +1,157 @@
 .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .header {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #e9ecef;
-    padding: 1rem 2rem;
-  }
-  
-  .headerContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .headerContent h1 {
-    margin: 0;
-    font-size: 1.75rem;
-  }
-  
-  .userInfo {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
-  .userInfo span {
-    font-weight: 500;
-  }
-  
-  .logoutBtn {
-    background: none;
-    border: none;
-    color: #dc3545;
-    cursor: pointer;
-    font-weight: 500;
-    padding: 0.25rem 0.5rem;
-  }
-  
-  .logoutBtn:hover {
-    text-decoration: underline;
-  }
-  
-  .nav {
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #495057;
-    padding: 0.5rem 0;
-    font-weight: 500;
-  }
-  
-  .nav a:hover {
-    color: #007bff;
-  }
-  
-  .nav a.active {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-  }
-  
-  .main {
-    flex: 1;
-    padding: 2rem;
-  }
-  
-  .main h2 {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
-  
-  .projectGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .projectCard {
-    background-color: white;
-    border: 1px solid #dee2e6;
-    border-radius: 6px;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  .projectCard h3 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-  }
-  
-  .projectCard p {
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
-  }
-  
-  .projectCard.addNew {
-    border: 2px dashed #dee2e6;
-    background-color: #f8f9fa;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .viewBtn, .addBtn {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-  }
-  
-  .viewBtn {
-    background-color: #e9ecef;
-    color: #212529;
-  }
-  
-  .viewBtn:hover {
-    background-color: #dee2e6;
-  }
-  
-  .addBtn {
-    background-color: #28a745;
-    color: white;
-  }
-  
-  .addBtn:hover {
-    background-color: #218838;
-  }
-  
-  .loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-size: 1.2rem;
-    color: #6c757d;
-  }
-  
-  .footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #f8f9fa;
-    border-top: 1px solid #e9ecef;
-    color: #6c757d;
-  }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem 2rem;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.headerContent h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.userInfo span {
+  font-weight: 500;
+}
+
+.logoutBtn {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+}
+
+.logoutBtn:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #495057;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+.nav a.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.main h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.projectCard {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.projectCard h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.projectCard p {
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.projectCard.addNew {
+  border: 2px dashed #dee2e6;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.viewBtn, .addBtn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.viewBtn {
+  background-color: #e9ecef;
+  color: #212529;
+}
+
+.viewBtn:hover {
+  background-color: #dee2e6;
+}
+
+.addBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+.addBtn:hover {
+  background-color: #218838;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  color: #6c757d;
+}

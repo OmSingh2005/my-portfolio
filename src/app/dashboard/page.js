@@ -1,5 +1,7 @@
+"use client";
+
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import styles from '../styles/Dashboard.module.css';
 
@@ -15,15 +17,17 @@ export default function Dashboard() {
 
   useEffect(() => {
     // Check if user is logged in
-    const token = localStorage.getItem('authToken');
-    const userData = localStorage.getItem('user');
-    
-    if (!token || !userData) {
-      router.push('/login');
-      return;
+    if (typeof window !== 'undefined') {
+      const token = localStorage.getItem('authToken');
+      const userData = localStorage.getItem('user');
+      
+      if (!token || !userData) {
+        router.push('/login');
+        return;
+      }
+      
+      setUser(JSON.parse(userData));
     }
-    
-    setUser(JSON.parse(userData));
   }, [router]);
 
   const handleLogout = () => {
@@ -49,7 +53,6 @@ export default function Dashboard() {
         <nav className={styles.nav}>
           <Link href="/">Home</Link>
           <Link href="/dashboard" className={styles.active}>Projects</Link>
-          <Link href="/profile">Profile</Link>
         </nav>
       </header>
 
@@ -73,7 +76,7 @@ export default function Dashboard() {
             </div>
           ))}
           
-          <div className={styles.projectCard + ' ' + styles.addNew}>
+          <div className={`${styles.projectCard} ${styles.addNew}`}>
             <h3>Add New Project</h3>
             <p>Create or link a new project</p>
             <Link href="/projects/new" className={styles.addBtn}>
